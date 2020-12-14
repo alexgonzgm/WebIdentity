@@ -1,0 +1,24 @@
+﻿@using WebIdentity.Models
+@model Department
+
+<h3>@Model.DepartmentName</h3>
+<table border="1" class="table table-striped table-bordered ">
+    <tr>
+        <th>Department ID</th>
+        <tD>@Model.DepartmentId</tD>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <tD>@Model.Email</tD>
+    </tr>
+    <tr>
+        <th>Phone</th>
+        <tD>@Model.PhoneNumber</tD>
+    </tr>
+    <tr>
+        <th>Office</th>
+        <tD>@Model.Office</tD>
+    </tr>
+</table>
+<a asp-controller="club" asp-action="allclub" class="btn btn-primary">Back to clubes list</a>
+
